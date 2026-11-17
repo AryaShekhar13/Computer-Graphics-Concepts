@@ -109,8 +109,6 @@ void performClipping()
         return;
     }
 
-Algorithm
-
      clippedPolygon = polygon;
 
      for (int edge = 0; edge < 4; edge++)
