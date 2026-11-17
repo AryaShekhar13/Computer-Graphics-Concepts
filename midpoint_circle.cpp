@@ -89,7 +89,7 @@ void mouse(int button, int state, int x, int y)
 {
     if (button == GLUT_LEFT_BUTTON && state == GLUT_DOWN)
     {
-        // Convert screen coordinates to Cartesian coordina
+        // Convert screen coordinates to Cartesian coordinates
         int wx = x - 400;
         int wy = 300 - y;
 
@@ -139,8 +139,8 @@ int main(int argc, char** argv)
     cout << "MIDPOINT CIRCLE DRAWING ALGORITHM" << endl;
     cout << "---------------------------------" << endl;
     cout << "Instructions:" << endl;
-    cout << "1. First click to select circle centre." << en
-    cout << "2. Second click to select circle radius." << e
+    cout << "1. First click to select circle centre." << endl;
+    cout << "2. Second click to select circle radius." << endl;
     cout << "3. Press R to draw another circle." << endl;
 
     glutInit(&argc, argv);
