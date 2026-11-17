@@ -48,16 +48,15 @@ void bezierFractal(float x, float y,
     float xEnd = x + length * cos(rad);
     float yEnd = y + length * sin(rad);
 
-    float x1 = x + length * 0.30 * cos(rad + 0.2
-    float y1 = y + length * 0.30 * sin(rad + 0.2
-
-    float x2 = x + length * 0.70 * cos(rad - 0.2
-    float y2 = y + length * 0.70 * sin(rad - 0.2
+    float x1 = x + length * 0.30 * cos(rad + 0.25);
+    float y1 = y + length * 0.30 * sin(rad + 0.25);
+    float x2 = x + length * 0.70 * cos(rad - 0.25);
+    float y2 = y + length * 0.70 * sin(rad - 0.25);
 
     glColor3f(0, 1, 0);
     glLineWidth(2);
 
-    drawBezier(x, y, x1, y1, x2, y2, xEnd, yEnd)
+    drawBezier(x, y, x1, y1, x2, y2, xEnd, yEnd);
 
     // Create two smaller branches
     bezierFractal(xEnd, yEnd, angle + 35,
@@ -67,16 +66,6 @@ void bezierFractal(float x, float y,
                   length * 0.68, level - 1);
 }
 
-25);
-25);
-
-25);
-25);
-
-
-
-
-);
 
 void display()
 {
@@ -110,8 +99,8 @@ void init()
 
 int main(int argc, char** argv)
 {
-    cout << "===== BEZIER FRACTAL PATTERN =====\
-    cout << "Initial recursion depth: " << depth
+    cout << "===== BEZIER FRACTAL PATTERN =====\n";
+    cout << "Initial recursion depth: " << depth << endl;
     cout << "Press + to increase depth\n";
     cout << "Press - to decrease depth\n";
     cout << "Press R to reset\n";
