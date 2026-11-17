@@ -67,8 +67,7 @@ void keyboard(unsigned char key, int x, int y)
         level++;
 
     if(key == '-' && level > 0)
-
-level--;
+        level--;
 
     if(key == 'r' || key == 'R')
         level = 3;
